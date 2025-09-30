@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Livvic';
+}
+
+#carte{
+    background-color: aqua;
+}
+
+.div-0{
+    background-color: #efecec;
+    padding: 20px ;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 15 00px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carta{
+    background: white;
+    width: 25%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+    transform: scale(0.9);
+
+}
+
+.img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    text-align: center;
+}
+
+.sku p{
+    padding: 0px 0 20px 0;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.codice{
+    padding: 5px 0;
+    color: rgb(228, 57, 0);
+    font-weight: bold;
+}
+
+.stock{
+    padding: 5px 0;
+}
+
+.stock span{
+    
+    color: rgb(0, 173, 0);
+    font-weight: bold;
+}
+
+.descrizione{
+    padding: 5px 0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.prezzo{
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(228, 57, 0);
+}
+
+.pulsanti{
+    display: flex;
+    justify-content: space-around;
+}
+
+.pulsanti a{
+    background: orangered;
+    text-align: center;
+    width: 100%;
+    border-radius: 20px;
+    padding: 5px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.pulsanti .space{
+    margin: 0 1px;
+}
+
+
+
+/*.pulsanti .buttom{
+    background: rgb(228, 57, 0);
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    margin: 10px 0;
+}*/
+
+/*.pulsanti .buttom{
+    background-color: orangered;
+    padding: 5px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+}*/
+
