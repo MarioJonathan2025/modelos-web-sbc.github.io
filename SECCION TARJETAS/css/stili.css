@@ -93,6 +93,11 @@ body{
     font-size: 12px;
 }
 
+.descrizione:hover{
+    cursor: pointer;
+    color: rgb(100, 175, 249);
+}
+
 .prezzo{
     padding: 20px 0;
     font-size: 20px;
