@@ -2,65 +2,46 @@
     margin: 0;
     padding: 0;
 
-    font-family: "Livvic" sans-serif;
+    font-family: "Livvic";
+}
+
+body{
+    background: beige;
 }
 
 .div-0{
     display: flex;
     flex-wrap: wrap;
-    width: 600px;
-}
-
-.carta{
-    background: white;
-    width: 25%;
-    margin: auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
-    transform: scale(0.8);
-
-}
-
-/*.div-0{
     background-color: #efecec;
     padding: 20px ;
     display: flex;
     justify-content: center;
-
-
 
     width: 100%;
     max-width: 15 00px;
     height: auto;
     overflow: hidden;
     position: relative;
-}*/
+}
 
-/*.carta{
+.carta{
     background: white;
-    width: 25%;
+    width: 300px;
     margin: auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
     transform: scale(0.8);
-
 }
 
-.img{
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
-    text-align: center;
-}
+
 
 .sku p{
     padding: 0px 0 20px 0;
     font-size: 14px;
     font-weight: 900;
 }
+
 
 .codice{
     padding: 5px 0;
@@ -101,15 +82,16 @@
     text-align: center;
     width: 100%;
     border-radius: 20px;
-    padding: 5px 0;
+    padding: 8px 0;
     text-decoration: none;
     color: white;
     font-size: 12px;
+    font-weight: 700;
 }
 
 .pulsanti .space{
     margin: 0 1px;
-}*/
+}
 
 
 
