@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-
     font-family: "Livvic";
 }
 
@@ -13,7 +12,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     background-color: #efecec;
-    padding: 20px ;
+    margin: auto;
     display: flex;
     justify-content: center;
 
@@ -34,7 +33,36 @@ body{
     transform: scale(0.8);
 }
 
+.img{
+    position: relative;
+    display: block;
+}   
 
+.botones{
+    position: absolute;
+    margin: auto;
+    opacity: 0;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: opacity 0.1s ease;
+    display: flex;
+    gap: 10px;
+}
+
+.botones button{
+    background: red;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    border: 0px ;
+    cursor: pointer;
+}
+
+.botones:hover, .img:hover .botones{
+    opacity: 1;
+
+}
 
 .sku p{
     padding: 0px 0 20px 0;
