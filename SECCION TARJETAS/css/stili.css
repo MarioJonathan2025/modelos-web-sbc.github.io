@@ -1,24 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Livvic';
-}
 
-#carte{
-    background-color: aqua;
+    font-family: "Livvic" sans-serif;
 }
 
 .div-0{
-    background-color: #efecec;
-    padding: 20px ;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    max-width: 15 00px;
-    height: auto;
-    overflow: hidden;
-    position: relative;
+    width: 600px;
 }
 
 .carta{
@@ -28,7 +18,33 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
-    transform: scale(0.9);
+    transform: scale(0.8);
+
+}
+
+/*.div-0{
+    background-color: #efecec;
+    padding: 20px ;
+    display: flex;
+    justify-content: center;
+
+
+
+    width: 100%;
+    max-width: 15 00px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}*/
+
+/*.carta{
+    background: white;
+    width: 25%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+    transform: scale(0.8);
 
 }
 
@@ -93,7 +109,7 @@
 
 .pulsanti .space{
     margin: 0 1px;
-}
+}*/
 
 
 
