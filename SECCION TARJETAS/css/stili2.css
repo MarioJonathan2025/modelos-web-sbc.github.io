@@ -9,7 +9,7 @@
 }
 
 #countdown-timer-1 {
-    padding: 20px 0;
+    padding-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,12 +17,25 @@
     gap: 20px;
 }
 
+.text-title{
+    color: orangered;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
 .time-unit {
     text-align: center;
     background-color: #f0f0f0;
     padding: 15px 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.time-unit #days, #hours, #minutes, #seconds{
+    -webkit-text-stroke: 2px orangered; /* ancho y color del borde */
+    color: gray; /* color del texto */
 }
 
 .time-unit span:first-child {

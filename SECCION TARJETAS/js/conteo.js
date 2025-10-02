@@ -30,5 +30,5 @@ function startCountdown(targetDate) {
 }
 
 // Example usage: Set a target date (e.g., December 31, 2025, 23:59:59)
-const targetDate = new Date("December 31, 2025 23:59:59");
+const targetDate = new Date("December 25, 2025 23:59:59");
 startCountdown(targetDate);
