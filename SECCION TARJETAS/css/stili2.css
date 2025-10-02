@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Livvic";
+}
+
+#conteggio-1{
+    background-color: #efecec;
+}
+
+#countdown-timer-1 {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    gap: 20px;
+}
+
+.time-unit {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.time-unit span:first-child {
+    display: block;
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+}
+
+.time-unit .label {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 5px;
+}
