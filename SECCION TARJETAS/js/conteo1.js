@@ -1,8 +1,8 @@
 function startCountdown(targetDate) {
-    const daysElement = document.getElementById('days');
-    const hoursElement = document.getElementById('hours');
-    const minutesElement = document.getElementById('minutes');
-    const secondsElement = document.getElementById('seconds');
+    const daysElement = document.getElementById('days-1');
+    const hoursElement = document.getElementById('hours-1');
+    const minutesElement = document.getElementById('minutes-1');
+    const secondsElement = document.getElementById('seconds-1');
 
     const updateCountdown = () => {
         const now = new Date().getTime();
@@ -30,5 +30,5 @@ function startCountdown(targetDate) {
 }
 
 // Example usage: Set a target date (e.g., December 31, 2025, 23:59:59)
-const targetDate = new Date("December 25, 2025 23:59:59");
+const targetDate = new Date("December 31, 2025 23:59:59");
 startCountdown(targetDate);
