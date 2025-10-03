@@ -1,4 +1,6 @@
-function startCountdown(targetDate) {
+//CONTEGGIO ALLA ROVESCIA 1
+
+function startCountdown(target_1_Date) {
     const daysElement = document.getElementById('days-1');
     const hoursElement = document.getElementById('hours-1');
     const minutesElement = document.getElementById('minutes-1');
@@ -6,7 +8,7 @@ function startCountdown(targetDate) {
 
     const updateCountdown = () => {
         const now = new Date().getTime();
-        const distance = targetDate.getTime() - now;
+        const distance = target_1_Date.getTime() - now;
 
         if (distance < 0) {
             clearInterval(countdownInterval);
@@ -30,5 +32,6 @@ function startCountdown(targetDate) {
 }
 
 // Example usage: Set a target date (e.g., December 31, 2025, 23:59:59)
-const targetDate = new Date("December 31, 2025 23:59:59");
-startCountdown(targetDate);
+const target_1_Date = new Date("January 01, 2026 00:00:00");
+startCountdown(target_1_Date);
+
