@@ -145,6 +145,67 @@ body{
     animation: parpadeo 1s infinite;
 }
 
+.sale2{
+    background-image: url('../img/ofertas/SUPER-OFERTA-izq.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40px;
+    margin-top: -34px;
+    position: relative;
+    top: 30px;
+    animation: parpadeo 1s infinite;
+}
+
+.sale3{
+    background-image: url('../img/ofertas/OFERTA-puntas.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70px;
+    margin-top: -64px;
+    position: relative;
+    top: 50px;
+    animation: parpadeo 1s infinite;
+}
+
+.sale4{
+    background-image: url('../img/ofertas/SALE-cuadrados.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70px;
+    margin-top: -64px;
+    position: relative;
+    top: 45px;
+    animation: parpadeo 1s infinite;
+}
+
+.sale5{
+    background-image: url('../img/ofertas/OFERTA-cinta-izq.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70px;
+    margin-top: -64px;
+    position: relative;
+    top: 45px;
+    left: -120px;
+    animation: parpadeo 1s infinite;
+}
+
+.sale6{
+    background-image: url('../img/ofertas/OFERTA-cinta-der.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70px;
+    margin-top: -64px;
+    position: relative;
+    top: 50px;
+    animation: parpadeo 1s infinite;
+}
+
 @keyframes parpadeo {
     0%, 50% {
         opacity: 1; /* visible */
