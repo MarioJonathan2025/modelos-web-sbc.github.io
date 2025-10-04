@@ -24,6 +24,7 @@ body{
 }
 
 .carta{
+    position: relative;
     background: white;
     width: 300px;
     margin: auto;
@@ -33,13 +34,37 @@ body{
     transform: scale(0.8);
 }
 
-.img{
+.sale1{
+    background-image: url('../img/ofertas/OFERTA-cinta-centro.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40px;
+    margin-top: -34px;
+    animation: parpadeo 1s infinite;
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.img{ /*POSITION, EN RELACION A .BOTONES*/
     position: relative;
     display: block;
-}   
+}
 
-.botones{
+.botones{ /*POSITION, EN RELACION A .IMG*/
     position: absolute;
+    z-index: 2;
     margin: auto;
     opacity: 0;
     top: 80%;
