@@ -34,29 +34,6 @@ body{
     transform: scale(0.8);
 }
 
-.sale1{
-    background-image: url('../img/ofertas/OFERTA-cinta-centro.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 40px;
-    margin-top: -34px;
-    animation: parpadeo 1s infinite;
-}
-
-@keyframes parpadeo {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-
 .img{ /*POSITION, EN RELACION A .BOTONES*/
     position: relative;
     display: block;
@@ -156,24 +133,35 @@ body{
 }
 
 
+/*=========================================== ANIMACIONES IMAGENES PNG =========================================*/
 
-/*.pulsanti .buttom{
-    background: rgb(228, 57, 0);
-    width: 100%;
-    text-align: center;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    padding: 5px 0;
-    margin: 10px 0;
+.sale1{
+    background-image: url('../img/ofertas/OFERTA-cinta-centro.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40px;
+    margin-top: -34px;
+    animation: parpadeo 1s infinite;
+}
+
+@keyframes parpadeo {
+    0%, 50% {
+        opacity: 1; /* visible */
+    }
+    50.01%, 100% {
+        opacity: 0; /* invisible */
+    }
+}
+
+/*@keyframes parpadeo { //efecto con desvanecimiento
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }*/
-
-/*.pulsanti .buttom{
-    background-color: orangered;
-    padding: 5px 0;
-    color: white;
-    text-decoration: none;
-    font-size: 10px;
-    font-weight: bold;
-}*/
-
