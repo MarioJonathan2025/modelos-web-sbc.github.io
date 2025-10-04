@@ -199,10 +199,11 @@ body{
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 70px;
-    margin-top: -64px;
+    height: 50px;
+    margin-top: -44px;
     position: relative;
-    top: 50px;
+    top: 220px;
+    left: 118px;
     animation: parpadeo 1s infinite;
 }
 
