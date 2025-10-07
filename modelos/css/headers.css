@@ -34,13 +34,25 @@
     
 }
 
-.div-2{
-    padding: 30px;
+.div-2 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
 }
 
-.div-2 i{
+.div-2-i{
     background: orangered;
-    font-size: 30px;
-    border-radius: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
 }
 
+.div-2-p{
+    width: 50%;
+    padding: 0 10px;
+    color: white;
+}
