@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Livvic';
+    src: url(../fonts/Livvic/Livvic-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Livvic';
+}
+
+#header-1{
+    background-color: beige;
+    padding: 40px 0;
+}
+
+/*=====================================================================================*/
+.div-0{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.div-1{
+    height: 100%;
+    object-fit: cover;
+}
+
+.div-1 img{
+    height: 100%;
+    
+}
+
+.div-2{
+    padding: 30px;
+}
+
+.div-2 i{
+    background: orangered;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
