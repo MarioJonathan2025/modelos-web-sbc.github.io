@@ -11,17 +11,24 @@
 }
 
 #header-1{
-    background-color: beige;
+    background: #0B486B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F56217, #0B486B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F56217, #0B486B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 40px 0;
+    display: flex;
+    justify-content: center;
 }
 
 /*=====================================================================================*/
 .div-0{
     background-color: black;
+    width: 100%;
     height: 100px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    overflow: hidden;
+
 }
 
 .div-1{
@@ -34,7 +41,13 @@
     
 }
 
+/*=====================================================================================*/
+.div-2{
+    height: 100%;
+}
+
 .div-2 a{
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,5 +67,117 @@
 .div-2-p{
     width: 50%;
     padding: 0 10px;
+    color: white;
+}
+
+/*=====================================================================================*/
+.div-3{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.div-3-search-square{
+    display: flex;
+}
+
+.div-3 .form-control{
+    align-items: center;
+    padding: 0 15px;
+    font-size: 20px;
+    width: 500px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.div-3 .form-control:focus{
+    color: #878787;
+    border: none;
+}
+
+.div-3-search-button{
+    position: absolute;
+    top: 25%;
+    left: 90%;
+}
+
+.div-3-search-button .btn-default{
+    background: orangered;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    top: 0%;
+    left: 0%;
+}
+
+/*=====================================================================================*/
+.div-4{
+    display: flex;
+}
+
+.div-4-user{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.div-4-user-i-1{
+    background: orangered;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.div-4-user-p{
+    width: 50%;
+    padding: 0 10px;
+    color: white;
+}
+
+.div-4-user-i-2{
+    color: white;
+}
+/* //////////////////////// */
+.div-4-pc{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.div-4-pc-i{
+    background: orangered;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.div-4-pc-p{
+    width: 100%;
+    padding: 0 10px;
+    color: white;
+}
+
+/* //////////////////////// */
+.div-4-cart{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.div-4-cart-i{
+    background: orangered;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
     color: white;
 }
