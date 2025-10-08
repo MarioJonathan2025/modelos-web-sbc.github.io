@@ -3,6 +3,10 @@
     src: url(../fonts/Livvic/Livvic-Regular.ttf);
 }
 
+:root{
+    --variablecolor: #ff4500;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -15,8 +19,6 @@
     background: -webkit-linear-gradient(to right, #F56217, #0B486B);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #F56217, #0B486B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 40px 0;
-    display: flex;
-    justify-content: center;
 }
 
 /*=====================================================================================*/
@@ -56,7 +58,7 @@
 }
 
 .div-2-i{
-    background: orangered;
+    background: var(--variablecolor);
     border-radius: 50%;
     padding: 10px;
     font-size: 25px;
@@ -188,13 +190,25 @@
     color: white;
 }
 
+.div-0-sub{/* para ocularlo antes de ir a media query*/
+    position: absolute;
+    background: black;
+    height: 50px;
+    opacity: 0;
+}
+
 /*========================================== MEDIA QUERIES ===========================================*/
-/*@media (max-width : 1200px){
-    .div-3 .form-control{
-        width: 90%;
+@media (max-width : 767px){/* para mostrarlo en media query debajo de div-0*/
+    
+    #header-1{
+        padding: 80px 0;/* hace aparecer el buscador debajo del div principal div-0*/
     }
 
-    .div-3-search-button .btn-default{
+    .div-0-sub{
+        position: relative;
+        opacity: 1;
 
+        background: black;
+        height: 50px;
     }
-}*/
+}
