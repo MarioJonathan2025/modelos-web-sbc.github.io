@@ -306,3 +306,14 @@
 
     }
 }
+
+@media (max-width : 349px){
+    .div-4-pc{
+        display: none;
+    }
+
+    .div-4-user{
+
+        padding: 0;
+    }
+}
