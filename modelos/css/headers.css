@@ -73,6 +73,7 @@
 /*=====================================================================================*/
 .div-3{
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,7 +101,7 @@
 .div-3-search-button{
     position: absolute;
     top: 25%;
-    left: 90%;
+    left: 88%;
 }
 
 .div-3-search-button .btn-default{
@@ -109,7 +110,7 @@
     height: 50px;
     width: 50px;
     top: 0%;
-    left: 0%;
+    left: 0;
 }
 
 /*=====================================================================================*/
@@ -183,8 +184,12 @@
 }
 
 /*========================================== MEDIA QUERIES ===========================================*/
-@media screen and (max-width=768px){
-    .div-3{
-        width: 70%;
+@media (max-width : 1200px){
+    .div-3 .form-control{
+        width: 90%;
+    }
+
+    .div-3-search-button .btn-default{
+
     }
 }
