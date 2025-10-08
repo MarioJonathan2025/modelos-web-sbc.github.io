@@ -87,11 +87,10 @@
 
 .div-3-search-square{
     width: 100%;
-
 }
 
 .div-3 .form-control{
-    align-items: center;
+    /*align-items: center;*/
     padding: 0 15px;
     font-size: 20px;
     width: 100%;
@@ -116,7 +115,7 @@
     border-radius: 50%;
     height: 50px;
     width: 50px;
-    top: 0%;
+    top: 0;
     left: 0;
 }
 
@@ -190,25 +189,64 @@
     color: white;
 }
 
-.div-0-sub{/* para ocularlo antes de ir a media query*/
-    position: absolute;
+.div-3-sub{/* para ocularlo antes de ir a media query*/
     background: black;
     height: 50px;
     opacity: 0;
+    display: none;
 }
 
 /*========================================== MEDIA QUERIES ===========================================*/
 @media (max-width : 767px){/* para mostrarlo en media query debajo de div-0*/
     
-    #header-1{
-        padding: 80px 0;/* hace aparecer el buscador debajo del div principal div-0*/
+    .div-0{
+        height: 60px;
+        display: flex;
+
     }
 
-    .div-0-sub{
-        position: relative;
+    .div-3-sub{/* DIV que aparece debajo del div principal en media query */
+        display: block;/* para que vuelva aparecer despues del diaplsy none*/
+        width: 100%;
         opacity: 1;
-
         background: black;
-        height: 50px;
+
+    }
+
+    .div-3-search-sub{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        padding: 7.5px 0;
+        position: relative;
+    }
+
+    .div-3-search-square-sub{
+        width: 100%;
+
+    }
+
+    .div-3-search-square-sub .form-control-sub{
+        width: 100%;
+        padding: 0 15px;
+        font-size: 20px;
+        height: 35px;
+        border: 2px solid orangered;
+        border-radius: 50px;
+    }
+
+    .div-3-search-button-sub{
+        position: absolute;
+    }
+
+    .div-3-search-button-sub .btn-default{
+        background: orangered;
+        border: none;
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        top: 0;
+        left: 0;
     }
 }
