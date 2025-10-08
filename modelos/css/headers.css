@@ -191,18 +191,17 @@
 
 .div-3-sub{/* para ocularlo antes de ir a media query*/
     background: black;
-    height: 50px;
+    height: auto;
     opacity: 0;
     display: none;
 }
 
 /*========================================== MEDIA QUERIES ===========================================*/
-@media (max-width : 767px){/* para mostrarlo en media query debajo de div-0*/
+@media (max-width : 819px){/* para mostrarlo en media query debajo de div-0*/
     
     .div-0{
         height: 60px;
         display: flex;
-
     }
 
     .div-3-sub{/* DIV que aparece debajo del div principal en media query */
@@ -210,7 +209,7 @@
         width: 100%;
         opacity: 1;
         background: black;
-
+        padding: 0 10px;
     }
 
     .div-3-search-sub{
@@ -218,20 +217,19 @@
         align-items: center;
         justify-content: flex-end;
         position: relative;
-        padding: 7.5px 0;
+        padding: 5px 0;
         position: relative;
     }
 
     .div-3-search-square-sub{
         width: 100%;
-
     }
 
     .div-3-search-square-sub .form-control-sub{
         width: 100%;
         padding: 0 15px;
         font-size: 20px;
-        height: 35px;
+        height: 40px;
         border: 2px solid orangered;
         border-radius: 50px;
     }
@@ -244,9 +242,23 @@
         background: orangered;
         border: none;
         border-radius: 50%;
-        height: 35px;
-        width: 35px;
+        height: 40px;
+        width: 40px;
         top: 0;
         left: 0;
+    }
+
+    .div-2, .div-3, .div-4{
+        display: flex;
+        scale: 0.7;
+        
+    }
+
+    .div-3{
+        display: none;
+    }
+
+    .div-4{
+        margin: 0 0 0 -70px;
     }
 }
