@@ -210,6 +210,10 @@
         display: flex;
     }
 
+    .div-2{
+        margin: 0 -20px 0 -20px;
+    }
+
     .div-3-sub{/* DIV que aparece debajo del div principal en media query */
         display: block;/* para que vuelva aparecer despues del diaplsy none*/
         width: 100%;
@@ -265,7 +269,7 @@
     }
 
     .div-4{
-        margin: 0 0 0 -70px;
+        margin: 0 -70px 0 -70px;
     }
 }
 
@@ -275,15 +279,30 @@
     }
 
     .div-2-first{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ff7746;
+        padding: 10px;
     }
 
     .div-2-i-first{
-        background: var(--variablecolor);
+        background: white;
         border-radius: 50%;
-        padding: 5px;
-        font-size: 25px;
+        padding: 10px;
+        font-size: 20px;
         font-weight: bold;
-        color: white;
+        color: orangered;
+    }
+
+    .div-4-user-p, .div-4-pc-p, .div-4-user-i-2{
+        display: none;
+    }
+
+    .div-4{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
     }
 }
