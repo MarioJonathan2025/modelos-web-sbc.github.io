@@ -189,6 +189,8 @@
     color: white;
 }
 
+/* /////////////////////////////////// PARA DESAPÀRECER /////////////////////////////////////// */
+
 .div-3-sub{/* para ocularlo antes de ir a media query*/
     background: black;
     height: auto;
@@ -196,8 +198,12 @@
     display: none;
 }
 
+.div-2-first{
+    display: none;
+}
+
 /*========================================== MEDIA QUERIES ===========================================*/
-@media (max-width : 819px){/* para mostrarlo en media query debajo de div-0*/
+@media (max-width : 767px){/* para mostrarlo en media query debajo de div-0*/
     
     .div-0{
         height: 60px;
@@ -260,5 +266,24 @@
 
     .div-4{
         margin: 0 0 0 -70px;
+    }
+}
+
+@media (max-width : 479px){
+    .div-2{
+        display: none;
+    }
+
+    .div-2-first{
+        display: block;
+    }
+
+    .div-2-i-first{
+        background: var(--variablecolor);
+        border-radius: 50%;
+        padding: 5px;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
     }
 }
