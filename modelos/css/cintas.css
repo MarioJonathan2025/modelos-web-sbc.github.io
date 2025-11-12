@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Livvic';
+    src: url(../fonts/Livvic/Livvic-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Livvic';
+}
+
+:root{
+    --subarucolor: #0e4bef;
+}
+
+#nastro-1{
+    background-color: var(--subarucolor);
+}
+
+.div-zero{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    font-size: 17px;
+}
+
+.div-zero-links ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;  /* PARA QUITAR LOS PUNTOS DEL LADO IZQUIERDO */
+
+}
+
+.div-zero-links li a, i{
+    padding: 0 5px;
+    text-decoration: none;
+    color: white;
+}
