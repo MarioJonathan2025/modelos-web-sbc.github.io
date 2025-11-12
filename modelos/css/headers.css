@@ -29,6 +29,22 @@
 }
 
 #header-3{
+    background: #C02425;  /* fallback for old browsers */ /* NAME = BACK TO THE FUTURE*/
+    background: -webkit-linear-gradient(to left, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 40px 0;
+}
+
+#header-4{
+    background: #833ab4;  /* fallback for old browsers */ /* NAME = INSTAGRAM*/
+    background: -webkit-linear-gradient(to left, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 40px 0;
+}
+
+#header-5{
+
     padding: 40px 0;
 }
 
