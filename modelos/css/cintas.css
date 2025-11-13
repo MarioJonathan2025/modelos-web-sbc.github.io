@@ -19,24 +19,20 @@
 }
 
 /*----------------------------------- PRIM0 NASTRO ---------------------------------------*/
-
 .div-zero{
     display: flex;
-    flex-wrap: wrap; /* para que se mueve */
+    flex-wrap: nowrap; /* para que se mueve al hacer responsive*/
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-
-    font-size: 15px;
 }
 
 .div-zero-links ul{
     display: flex;
-    justify-content: center;
     list-style-type: none;  /* PARA QUITAR LOS PUNTOS DEL LADO IZQUIERDO */
 }
 
-.div-zero-links li a, i{
+
+.div-zero-links ul li a, i{
     padding: 0 5px;
     text-decoration: none;
     color: white;
@@ -49,36 +45,37 @@
 } */
 
 /* //////////////////////////////////////////////////////////////*/
-.slider-frame {
-    display: flex;
-    justify-content: center;
+.div-zero-promo {
+    
 
 	overflow: hidden;
 }
 
-.slider-frame ul {
-	display: flex;
+.div-zero-promo ul {
+    display: flex;
 
-	animation: slide 3s infinite alternate ease-in-out;
+	animation: slide 3s infinite alternate;
 }
 
-.slider-frame li {
+.div-zero-promo li {
 
 	list-style: none;
 }
 
+.div-zero-promo li img{
+    height: 100%;
+}
 
-
-@keyframes slide {
+/* @keyframes slide {
 	0% {margin-left: 0;}
 	20% {margin-left: 0;}
 	
-	25% {margin-left: 50%;}
-	45% {margin-left: 50%;}
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
 	
-	50% {margin-left: -50%;}
-	70% {margin-left: -50%;}
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
 	
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
-}
+} */
