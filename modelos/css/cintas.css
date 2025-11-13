@@ -15,12 +15,16 @@
 }
 
 #nastro-1{
-    background-color: var(--subarucolor);
+    background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 30px 0;
 }
 
 /*----------------------------------- PRIM0 NASTRO ---------------------------------------*/
 
 .div-zero{
+    background-color: var(--subarucolor);
     display: flex;
     flex-wrap: nowrap; /* para que se mueve al hacer responsive*/
     justify-content: center;
@@ -33,10 +37,7 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-
     list-style-type: none;  /* PARA QUITAR LOS PUNTOS DEL LADO IZQUIERDO */
-
-
 
 }
 
@@ -47,65 +48,62 @@
     color: white;
 }
 
-/* .div-zero-promo a{
-    display: flex;
-    align-items: center;
-    object-fit: cover;
-} */
-
 /* ////////////////////////////////////////////////////////////// */
 
 .div-zero-promo {
     overflow: hidden; /* para que no pasar limite hacia otro div */
     width: 880px;
-
 }
 
 .div-zero-promo ul {
     width: 440px;
     margin: 0 auto;
     display: flex;
-
     position: relative;
     /* left: 50%; */
     
-	animation: slide 3s infinite alternate;
-
+	animation: slide 2s infinite alternate ease-in;
 }
 
 .div-zero-promo li {
 	list-style: none;
+}
 
-
-
+.div-zero-promo ul li:nth-child(3) {
+    display: none;
 }
 
 .div-zero-promo li img{
-
+    position: relative;
     width: 100%;
     height: 100%;
-
-
 }
 
-/* @keyframes slide {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-	
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
-} */
+.div-zero-promo li img{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes slide {
+    0%, 80% {
+        opacity: 1; /* visible */
+    }
+    80.01%, 100% {
+        opacity: 0; /* invisible */
+    }
+}
 
 /* ////////////////////////////////////////////////////////////// */
 .div-zero-social{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+}
 
+.div-zero-social i{
+    padding: 0 12px;
+}
+
+.div-zero-social .fa-facebook-f, .fa-tiktok{
+    font-size: 15px;
 }

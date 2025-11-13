@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#separator-1{
+    background: #262626;
+    padding: 20px 0;
+}
+
+#separator-2{
+    background: #262626;
+    padding: 20px 0;
+}
+
+#separator-2a{
+    background: #262626;
+    padding: 20px 0;
+}
+
+#separator-3{
+    background: #262626;
+    padding: 20px 0;
+}
+
+#separator-4{
+    background: #262626;
+    padding: 20px 0;
+}
+
+/*///////////////////////////////////////////////////////////////////////////*/
+
+.separator-1-normal{
+    height: 2px;
+    background-color: #4efd00;
+}
+
+.separator-2-neon{
+    height: 2px;
+    background-color: #4efd00;
+    box-shadow:
+        0 0 0px #4efd00,
+        0 0 2px #4efd00,
+        0 0 5px #4efd00,
+        0 0 10px #4efd00 inset;
+}
+
+.separator-2a-neon-plus{
+    height: 2px;
+    background-color: #4efd00;
+    box-shadow:
+        0 0 0px #4efd00,
+        0 0 2px #4efd00,
+        0 0 5px #4efd00,
+        0 0 10px #4efd00 inset;
+    animation: neonPulse 2s ease-in-out infinite;
+}
+
+@keyframes neonPulse {
+    0%, 100% {
+        box-shadow:
+        0 0 0px #4efd00,
+        0 0 2px #4efd00,
+        0 0 5px #4efd00,
+        0 0 10px #4efd00 inset;
+    }
+    50% {
+        box-shadow:
+        0 0 5px #4efd00,
+        0 0 10px #4efd00,
+        0 0 15px #4efd00,
+        0 0 20px #4efd00 inset;
+    }
+}
+
+.separator-3-rgb{
+    height: 2px;
+    background-color: #4efd00;
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+    border: none;
+}
+
+/* .separator-3-rgb{
+    height: 2px;
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+
+} */
+
+.separator-4-rgb-dinamic{
+    height: 2px;
+    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet, red);
+    background-size: 400% 400%;
+    animation: gradientMove 15s infinite ease;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*OTRO KEYFRAME*/
+/* @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  } */
+
+  
+
+
+
+
+
+
+
+
