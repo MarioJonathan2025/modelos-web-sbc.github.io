@@ -24,6 +24,11 @@
     padding: 20px 0;
 }
 
+#separator-3a{
+    background: #262626;
+    padding: 20px 0;
+}
+
 #separator-4{
     background: #262626;
     padding: 20px 0;
@@ -87,7 +92,7 @@
 
 } */
 
-.separator-4-rgb-dinamic{
+.separator-3a-rgb-dinamic{
     height: 2px;
     background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet, red);
     background-size: 400% 400%;
@@ -116,12 +121,54 @@
     }
   } */
 
+/*.separator-4-two-neon{
+    /* height: 2px;
+  background: repeating-linear-gradient(
+    90deg,              /* dirección horizontal */
+    /*#4efd00,            /* color 1 (verde neón) */
+    /*#4efd00 10px,       /* color 1 hasta 10px */
+    /*#00ffff 10px,       /* color 2 (cyan neón) inicia en 10px */
+    /*#00ffff 20px        /* color 2 hasta 20px *//*
+  );
+  box-shadow:
+    0 0 5px #4efd00,
+    0 0 10px #4efd00,
+    0 0 15px #00ffff,
+    0 0 20px #00ffff inset;
+}*/
+
+.separator-4-two-neon {
+    position: relative;
+    height: 4px;
+    background: repeating-linear-gradient(
+      90deg,
+      blue 0 10px,
+      #4efd00 10px 20px
+    );
+    margin: 20px 0;
+    /* Para evitar que sombra se corte */
+    overflow: visible;
+  }
   
-
-
-
-
-
-
-
-
+  /* Pseudo-elemento para sombra azul */
+  .separator-4-two-neon::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 50%; bottom: 0;
+    box-shadow:
+      0 0 8px blue,
+      0 0 16px blue;
+    pointer-events: none;
+  }
+  
+  /* Pseudo-elemento para sombra verde */
+  .separator-4-two-neon::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 50%; right: 0; bottom: 0;
+    box-shadow:
+      0 0 8px #4efd00,
+      0 0 16px #4efd00;
+    pointer-events: none;
+  }
+  00
