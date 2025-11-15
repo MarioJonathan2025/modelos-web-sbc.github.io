@@ -145,10 +145,12 @@
 
 /*===================== LOGO, MOTORE DI RICERCA E PULSANTI =======================*/
 /*=====================================================================================*/
+
+
 .div-0{
     background-color: var(--subarucolorblue);
     width: 100%;
-    height: 100px;
+    height: 80px;
     display: flex;
     flex-wrap: nowrap;/* hacer el efecto comprimido como en la pagina web principal */
     align-items: center;
@@ -157,7 +159,9 @@
 }
 
 .div-1{
+
     height: 100%;
+    /* height: 100%; */
     object-fit: cover;
 }
 

@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Livvic";
+    src: url(../fonts/Livvic/Livvic-Regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Livvic';
+}
+
+:root{
+    --subarucolorblue: #0e4bef;
+    --subarucolorwhite: #ffffff;
+    --variablecoloricon: orangered;
+    --variablecolorneongreen: #4efd00;
+}
+
+/*=======================================================================*/
+/*=======================================================================*/
+body{
+    background-color: #888888;
+}
+
+nav{
+    /* max-width: 900px; */
+    margin: auto;
+    background-color: var(--subarucolorwhite);
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.menu-horizontale{
+    display: flex;
+    justify-content: space-around;
+    
+    list-style: none;
+}
+
+.menu-horizontale > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: green;
+    text-decoration: none;
+}
+
+.menu-horizontale > li:hover{
+    background-color: #4efd00;
+}
+
+.menu-horizontale li:hover .menu-verticale{
+    display: block;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////*/
+.menu-verticale{
+    list-style: none;
+    position: absolute;
+    display: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-verticale li:hover{
+    background-color: black;
+}
+
+.menu-verticale li a{
+    display: block;
+    text-decoration: none;
+    color: var(--subarucolorwhite);
+    padding: 15px 15px 15px 20px;
+}

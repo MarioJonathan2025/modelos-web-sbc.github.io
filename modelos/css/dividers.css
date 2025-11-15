@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root{
+    --colorneon: #4efd00;
+}
+
 #separator-1{
     background: #262626;
     padding: 20px 0;
@@ -38,50 +42,50 @@
 
 .separator-1-normal{
     height: 2px;
-    background-color: #4efd00;
+    background-color: var(--colorneon);
 }
 
 .separator-2-neon{
     height: 2px;
-    background-color: #4efd00;
+    background-color: var(--colorneon);
     box-shadow:
-        0 0 0px #4efd00,
-        0 0 2px #4efd00,
-        0 0 5px #4efd00,
-        0 0 10px #4efd00 inset;
+        0 0 0px var(--colorneon),
+        0 0 2px var(--colorneon),
+        0 0 5px var(--colorneon),
+        0 0 10px var(--colorneon) inset;
 }
 
 .separator-2a-neon-plus{
     height: 2px;
-    background-color: #4efd00;
+    background-color: var(--colorneon);
     box-shadow:
-        0 0 0px #4efd00,
-        0 0 2px #4efd00,
-        0 0 5px #4efd00,
-        0 0 10px #4efd00 inset;
+        0 0 0px var(--colorneon),
+        0 0 2px var(--colorneon),
+        0 0 5px var(--colorneon),
+        0 0 10px var(--colorneon) inset;
     animation: neonPulse 2s ease-in-out infinite;
 }
 
 @keyframes neonPulse {
     0%, 100% {
         box-shadow:
-        0 0 0px #4efd00,
-        0 0 2px #4efd00,
-        0 0 5px #4efd00,
-        0 0 10px #4efd00 inset;
+        0 0 0px var(--colorneon),
+        0 0 2px var(--colorneon),
+        0 0 5px var(--colorneon),
+        0 0 10px var(--colorneon) inset;
     }
     50% {
         box-shadow:
-        0 0 5px #4efd00,
-        0 0 10px #4efd00,
-        0 0 15px #4efd00,
-        0 0 20px #4efd00 inset;
+        0 0 5px var(--colorneon),
+        0 0 10px var(--colorneon),
+        0 0 15px var(--colorneon),
+        0 0 20px var(--colorneon) inset;
     }
 }
 
 .separator-3-rgb{
     height: 2px;
-    background-color: #4efd00;
+    background-color: var(--colorneon);
     background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
     border: none;
 }
@@ -125,14 +129,14 @@
     /* height: 2px;
   background: repeating-linear-gradient(
     90deg,              /* dirección horizontal */
-    /*#4efd00,            /* color 1 (verde neón) */
-    /*#4efd00 10px,       /* color 1 hasta 10px */
+    /*var(--colorneon),            /* color 1 (verde neón) */
+    /*var(--colorneon) 10px,       /* color 1 hasta 10px */
     /*#00ffff 10px,       /* color 2 (cyan neón) inicia en 10px */
     /*#00ffff 20px        /* color 2 hasta 20px *//*
   );
   box-shadow:
-    0 0 5px #4efd00,
-    0 0 10px #4efd00,
+    0 0 5px var(--colorneon),
+    0 0 10px var(--colorneon),
     0 0 15px #00ffff,
     0 0 20px #00ffff inset;
 }*/
@@ -143,7 +147,7 @@
     background: repeating-linear-gradient(
       90deg,
       blue 0 10px,
-      #4efd00 10px 20px
+      var(--colorneon) 10px 20px
     );
     margin: 20px 0;
     /* Para evitar que sombra se corte */
@@ -167,8 +171,8 @@
     position: absolute;
     top: 0; left: 50%; right: 0; bottom: 0;
     box-shadow:
-      0 0 8px #4efd00,
-      0 0 16px #4efd00;
+      0 0 8px var(--colorneon),
+      0 0 16px var(--colorneon);
     pointer-events: none;
   }
   
