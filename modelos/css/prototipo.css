@@ -13,8 +13,9 @@
 :root{
     --subarucolorblue: #0e4bef;
     --subarucolorwhite: #ffffff;
-    --variablecolor: #ff4500;
-    --variablecolorgreen: #4efd00;
+    --variablecoloricon: orangered;
+    --variablecolorneongreen: #4efd00;
+
 }
 
 /*#nastro-1{
@@ -116,29 +117,29 @@
 .separator-2a-neon-plus{
     position: relative;
     height: 2px;
-    background-color: var(--variablecolorgreen);
+    background-color: var(--variablecolorneongreen);
     box-shadow:
-        0 0 0px var(--variablecolorgreen),
-        0 0 2px var(--variablecolorgreen),
-        0 0 5px var(--variablecolorgreen),
-        0 0 10px var(--variablecolorgreen) inset;
+        0 0 0px var(--variablecolorneongreen),
+        0 0 2px var(--variablecolorneongreen),
+        0 0 5px var(--variablecolorneongreen),
+        0 0 10px var(--variablecolorneongreen) inset;
     animation: neonPulse 2s ease-in-out infinite;
 }
 
 @keyframes neonPulse {
     0%, 100% {
         box-shadow:
-        0 0 0px var(--variablecolorgreen),
-        0 0 2px var(--variablecolorgreen),
-        0 0 5px var(--variablecolorgreen),
-        0 0 10px var(--variablecolorgreen) inset;
+        0 0 0px var(--variablecolorneongreen),
+        0 0 2px var(--variablecolorneongreen),
+        0 0 5px var(--variablecolorneongreen),
+        0 0 10px var(--variablecolorneongreen) inset;
     }
     50% {
         box-shadow:
-        0 0 5px var(--variablecolorgreen),
-        0 0 10px var(--variablecolorgreen),
-        0 0 15px var(--variablecolorgreen),
-        0 0 20px var(--variablecolorgreen) inset;
+        0 0 5px var(--variablecolorneongreen),
+        0 0 10px var(--variablecolorneongreen),
+        0 0 15px var(--variablecolorneongreen),
+        0 0 20px var(--variablecolorneongreen) inset;
     }
 }
 
@@ -180,7 +181,7 @@
 }
 
 .div-2-i{
-    background: var(--variablecolor);
+    background: var(--variablecoloricon);
     border-radius: 50%;
     padding: 10px;
     font-size: 25px;
@@ -200,6 +201,7 @@
 
 /*=====================================================================================*/
 .div-3{
+    padding-left: 20px; /* POR PONER DISPLAY NONEN EN .DIV-2 */
     width: 100%;
 }
 
@@ -213,6 +215,7 @@
 
 .div-3-search-square{
     width: 100%;
+
 }
 
 .div-3 .form-control{
@@ -221,7 +224,7 @@
     font-size: 20px;
     width: 100%;
     height: 60px;
-    border: 2px solid orangered;
+    border: 2px solid var(--variablecolorneongreen);
     border-radius: 50px;
 }
 
@@ -232,11 +235,24 @@
 
 .div-3-search-button{
     position: absolute;
-
 }
 
+/* .div-3-search-button .fa-magnifying-glass{
+    background: var(--subarucolorblue);
+    border: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
 .div-3-search-button .btn-default{
-    background: orangered;
+    background: var(--subarucolorblue);
     border: none;
     border-radius: 50%;
     height: 50px;
@@ -253,12 +269,16 @@
 .div-4-user{
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding: 2px 5px;
+    margin: 15px 5px;
     text-decoration: none;
+
+    border: 2px solid var(--variablecolorneongreen);
+    border-radius: 30px;
 }
 
 .div-4-user-i-1{
-    background: orangered;
+    /* background: var(--variablecoloricon); */
     border-radius: 50%;
     padding: 10px;
     font-size: 25px;
@@ -268,7 +288,7 @@
 
 .div-4-user-p{
     width: 50%;
-    padding: 0 10px;
+    padding: 0 10px 0 0;
     color: var(--subarucolorwhite);
 }
 
@@ -279,12 +299,16 @@
 .div-4-pc{
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding: 2px 5px;
+    margin: 15px 5px;
     text-decoration: none;
+
+    border: 2px solid var(--variablecolorneongreen);
+    border-radius: 30px;
 }
 
 .div-4-pc-i{
-    background: orangered;
+    /* background: var(--variablecoloricon); */
     border-radius: 50%;
     padding: 10px;
     font-size: 25px;
@@ -294,7 +318,7 @@
 
 .div-4-pc-p{
     width: 100%;
-    padding: 0 10px;
+    padding: 0 10px 0 0;
     color: var(--subarucolorwhite);
 }
 
@@ -302,12 +326,16 @@
 .div-4-cart{
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding: 2px 5px;
+    margin: 15px 5px;
     text-decoration: none;
+
+    border: 2px solid var(--variablecolorneongreen);
+    border-radius: 30px;
 }
 
 .div-4-cart-i{
-    background: orangered;
+    /* background: var(--variablecoloricon); */
     border-radius: 50%;
     padding: 10px;
     font-size: 25px;
@@ -366,7 +394,7 @@
         padding: 0 15px;
         font-size: 20px;
         height: 40px;
-        border: 2px solid orangered;
+        border: 2px solid var(--variablecoloricon);
         border-radius: 50px;
     }
 
@@ -375,7 +403,7 @@
     }
 
     .div-3-search-button-sub .btn-default{
-        background: orangered;
+        background: var(--variablecoloricon);
         border: none;
         border-radius: 50%;
         height: 40px;
@@ -408,7 +436,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #ff7746;
+        background: var(--variablecoloricon);
         padding: 10px;
     }
 
@@ -418,7 +446,10 @@
         padding: 10px;
         font-size: 20px;
         font-weight: bold;
-        color: orangered;
+    }
+
+    .div-2-i-first .fa-bars{
+        color: var(--variablecoloricon);
     }
 
     .div-4-user-p, .div-4-pc-p, .div-4-user-i-2{
