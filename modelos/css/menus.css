@@ -24,24 +24,28 @@ body{
 }
 
 nav{
-    /* max-width: 900px; */
-    margin: auto;
+    max-width: 1920px;
+
     background-color: var(--subarucolorwhite);
-    font-size: 20px;
-    margin-top: 50px;
+    font-size: 15px;
+    margin-top: 30px;
 }
 
 .menu-horizontale{
     display: flex;
     justify-content: space-around;
-    
+    align-items: center;
     list-style: none;
+    margin: 0 50px;
 }
+
+
 
 .menu-horizontale > li > a{
     display: block;
-    padding: 15px 20px;
-    color: green;
+    padding: 5px 20px; /* ESPACIO ENTRE CATEGORIAS */
+    color: var(--variablecoloricon);
+    font-weight: 900;
     text-decoration: none;
 }
 
@@ -71,5 +75,5 @@ nav{
     display: block;
     text-decoration: none;
     color: var(--subarucolorwhite);
-    padding: 15px 15px 15px 20px;
+    padding: 15px 15px 15px 20px; /* ESPACIO ENTRE SUBCATEGORIAS */
 }

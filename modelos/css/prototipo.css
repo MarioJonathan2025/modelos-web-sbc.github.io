@@ -26,6 +26,10 @@
 }*/
 
 /*----------------------------------- PRIM0 NASTRO ---------------------------------------*/
+#natro-1{
+    background-color: var(--subarucolorblue);
+    width: 100%;
+}
 
 .div-zero{
     background-color: var(--subarucolorblue);
@@ -33,14 +37,14 @@
     flex-wrap: nowrap; /* para que se mueve al hacer responsive*/
     justify-content: center;
     align-items: center;
-
-
+    max-width: 1500px;
+    margin: auto;
 }
 
 .div-zero-links ul{
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: flex-end;
     list-style-type: none;  /* PARA QUITAR LOS PUNTOS DEL LADO IZQUIERDO */
 
 }
