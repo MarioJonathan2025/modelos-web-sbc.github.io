@@ -13,6 +13,7 @@
 :root{
     --subarucolorblue: #0e4bef;
     --subarucolorwhite: #ffffff;
+    --subarucolorblack: #000000;
     --variablecoloricon: orangered;
     --variablecolorneongreen: #4efd00;
 }
@@ -43,19 +44,25 @@ nav{
 
 .menu-horizontale > li > a{
     display: block;
-    padding: 5px 20px; /* ESPACIO ENTRE CATEGORIAS */
-    color: var(--variablecoloricon);
+    padding: 5px 5px; /* ESPACIO ENTRE CATEGORIAS */
+    color: var(--subarucolorblue);
     font-weight: 900;
     text-decoration: none;
 }
 
 .menu-horizontale > li:hover{
-    background-color: #4efd00;
+    background-color: var(--subarucolorblack);
 }
 
 .menu-horizontale li:hover .menu-verticale{
     display: block;
 }
+
+.menu-horizontale li a:hover, .menu-verticale li a:focus+{
+    color: var(--subarucolorwhite);
+}
+
+
 
 
 /*/////////////////////////////////////////////////////////////////////////*/
