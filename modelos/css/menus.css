@@ -40,13 +40,11 @@ nav{
     margin: 0 50px;
 }
 
-
-
 .menu-horizontale > li > a{
     display: block;
     padding: 5px 5px; /* ESPACIO ENTRE CATEGORIAS */
     color: var(--subarucolorblue);
-    font-weight: 900;
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -58,7 +56,7 @@ nav{
     display: block;
 }
 
-.menu-horizontale li a:hover, .menu-verticale li a:focus+{
+.menu-horizontale li a:hover, .menu-verticale li a:focus{
     color: var(--subarucolorwhite);
 }
 

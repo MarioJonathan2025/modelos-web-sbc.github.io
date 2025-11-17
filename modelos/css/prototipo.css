@@ -15,7 +15,6 @@
     --subarucolorwhite: #ffffff;
     --variablecoloricon: orangered;
     --variablecolorneongreen: #4efd00;
-
 }
 
 /*#nastro-1{
@@ -26,9 +25,8 @@
 }*/
 
 /*----------------------------------- PRIM0 NASTRO ---------------------------------------*/
-#natro-1{
+#nastro-1{
     background-color: var(--subarucolorblue);
-    width: 100%;
 }
 
 .div-zero{
@@ -37,7 +35,7 @@
     flex-wrap: nowrap; /* para que se mueve al hacer responsive*/
     justify-content: center;
     align-items: center;
-    max-width: 1500px;
+    max-width: 1600px;
     margin: auto;
 }
 
@@ -46,7 +44,6 @@
     flex-wrap: nowrap;
     justify-content: flex-end;
     list-style-type: none;  /* PARA QUITAR LOS PUNTOS DEL LADO IZQUIERDO */
-
 }
 
 
@@ -116,10 +113,9 @@
     font-size: 15px;
 }
 
-
 /*==================================== SEPARATORE ================================*/
 .separator-2a-neon-plus{
-    position: relative;
+    position: relative; /* ENCIMA DE CINTA Y LOGO Y BUSCADOR */
     height: 2px;
     background-color: var(--variablecolorneongreen);
     box-shadow:
@@ -149,29 +145,24 @@
 
 /*===================== LOGO, MOTORE DI RICERCA E PULSANTI =======================*/
 /*=====================================================================================*/
-
-
 .div-0{
     background-color: var(--subarucolorblue);
     width: 100%;
-    height: 80px;
+    height: 90px; /* ALTURA DEL DIV PARA LA IMAGEN */
     display: flex;
     flex-wrap: nowrap;/* hacer el efecto comprimido como en la pagina web principal */
     align-items: center;
     overflow: hidden;
-
 }
 
 .div-1{
-
     height: 100%;
-    /* height: 100%; */
     object-fit: cover;
+
 }
 
 .div-1 img{
     height: 100%;
-    
 }
 
 /*=====================================================================================*/
@@ -204,7 +195,7 @@
 }
 
 .div-2{
-    display: none;
+    display: none; /* PARA OCULTAR MENU CATEGORIAS */
 }
 
 /*=====================================================================================*/
@@ -218,12 +209,11 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 100%;
+
 }
 
 .div-3-search-square{
     width: 100%;
-
 }
 
 .div-3 .form-control{
@@ -231,7 +221,7 @@
     padding: 0 15px;
     font-size: 20px;
     width: 100%;
-    height: 60px;
+    height: 40px; /* ALTURA DEL BUSCADOR */
     border: 2px solid var(--variablecolorneongreen);
     border-radius: 50px;
 }
@@ -263,8 +253,8 @@
     background: var(--subarucolorblue);
     border: none;
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     top: 0;
     left: 0;
 }
@@ -276,66 +266,68 @@
 
 .div-4-user{
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 2px 5px;
-    margin: 15px 5px;
+    margin: 25px 5px;
+    padding: 0 5px;
     text-decoration: none;
 
     border: 2px solid var(--variablecolorneongreen);
     border-radius: 30px;
 }
 
-.div-4-user-i-1{
+.div-4-user-i{
     /* background: var(--variablecoloricon); */
-    border-radius: 50%;
-    padding: 10px;
+    /* border-radius: 20%; */
+    padding: 0 5px;
     font-size: 25px;
     font-weight: bold;
     color: var(--subarucolorwhite);
 }
 
 .div-4-user-p{
-    width: 50%;
     padding: 0 10px 0 0;
     color: var(--subarucolorwhite);
+    font-size: 15px;
 }
 
-.div-4-user-i-2{
+/* .div-4-user-i-2{
     color: var(--subarucolorwhite);
-}
+} */
 /* //////////////////////// */
 .div-4-pc{
     display: flex;
     align-items: center;
-    padding: 2px 5px;
-    margin: 15px 5px;
+    align-items: center;
+    margin: 25px 5px;
+    padding: 0 5px;
     text-decoration: none;
-
+    
     border: 2px solid var(--variablecolorneongreen);
     border-radius: 30px;
 }
 
 .div-4-pc-i{
     /* background: var(--variablecoloricon); */
-    border-radius: 50%;
-    padding: 10px;
+    /* border-radius: 20%; */
+    padding: 0 10px 0 5px;
     font-size: 25px;
     font-weight: bold;
     color: var(--subarucolorwhite);
 }
 
 .div-4-pc-p{
-    width: 100%;
     padding: 0 10px 0 0;
     color: var(--subarucolorwhite);
+    font-size: 15px;
 }
 
 /* //////////////////////// */
 .div-4-cart{
     display: flex;
     align-items: center;
-    padding: 2px 5px;
-    margin: 15px 5px;
+    margin: 25px 5px;
+    padding: 0 5px;
     text-decoration: none;
 
     border: 2px solid var(--variablecolorneongreen);
@@ -344,8 +336,8 @@
 
 .div-4-cart-i{
     /* background: var(--variablecoloricon); */
-    border-radius: 50%;
-    padding: 10px;
+    /* border-radius: 50%; */
+    padding: 0 10px 0 5px;
     font-size: 25px;
     font-weight: bold;
     color: var(--subarucolorwhite);
