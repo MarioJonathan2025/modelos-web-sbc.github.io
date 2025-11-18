@@ -18,6 +18,12 @@
     --variablecolorneongreen: #4efd00;
 }
 
+#menubar-1{
+    background: #C33764;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 20px 0;
+}
 /*=======================================================================*/
 /*=======================================================================*/
 body{
@@ -29,7 +35,7 @@ nav{
 
     background-color: var(--subarucolorwhite);
     font-size: 15px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 .menu-horizontale{
@@ -53,7 +59,12 @@ nav{
 }
 
 .menu-horizontale li:hover .menu-verticale{
-    display: block;
+    /* display: block; */ /* antes activo pero le puse ahora flex */
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(8, 1fr); /* 8 columnas con 1 fraccion de espacio entre ellas */
+    gap: 10px; /* espacio entre columnas y filas */
+
 }
 
 .menu-horizontale > li:hover > a { /* RECIEN AGREGADO */
@@ -70,15 +81,31 @@ nav{
     list-style: none;
     position: absolute;
     display: none;
-    width: 200px;
+    width: 800px;
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid var(--variablecolorneongreen) ;
     
 }
 
 .menu-verticale li a{
-    display: block;
     text-decoration: none;
     color: var(--subarucolorwhite);
     padding: 15px 15px 15px 20px; /* ESPACIO ENTRE SUBCATEGORIAS */
+}
+
+/*=======================================================================*/
+/*=========================== DENTRO DI MENU ============================*/
+.menu-verticale > li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-verticale > li > a > img{
+    height: 70px;
+    width: 70px;
+}
+
+.menu-verticale > li > a > span{
+    display: flex;
 }
