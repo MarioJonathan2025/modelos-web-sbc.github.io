@@ -56,12 +56,14 @@ nav{
     display: block;
 }
 
-.menu-horizontale li a:hover, .menu-verticale li a:focus{
+.menu-horizontale > li:hover > a { /* RECIEN AGREGADO */
     color: var(--subarucolorwhite);
 }
 
 
-
+/* .menu-horizontale > li >a:hover, .menu-verticale:focus{
+    color: var(--subarucolorwhite);
+} */
 
 /*/////////////////////////////////////////////////////////////////////////*/
 .menu-verticale{
@@ -70,10 +72,8 @@ nav{
     display: none;
     width: 200px;
     background-color: rgba(0, 0, 0, 0.5);
-}
-
-.menu-verticale li:hover{
-    background-color: black;
+    border: 2px solid var(--variablecolorneongreen) ;
+    
 }
 
 .menu-verticale li a{
