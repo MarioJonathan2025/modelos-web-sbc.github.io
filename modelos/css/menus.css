@@ -84,14 +84,16 @@ nav{
     position: absolute;
     display: none;
     /* width: auto; el ancho del menu vertical se ajusta automaticamente  */
-    background-color: rgba(70, 70, 70, 0.5);
+    background-color: rgba(211, 211, 211, 0.5);
     border: 2px solid var(--variablecolorneongreen) ;
+    padding: 20px 20px;
 }
 
 .menu-verticale li a{
     text-decoration: none;
     color: var(--subarucolorwhite);
-    margin: 15px 0px;
+    margin: 15px 10px;
+
 
 }
 
