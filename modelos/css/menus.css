@@ -97,8 +97,11 @@ nav{
 /*=========================== DENTRO DI MENU ============================*/
 .menu-verticale > li{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 120px;
+}
+
+.menu-verticale > li > a{
+
 }
 
 .menu-verticale > li > a > img{
