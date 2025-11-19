@@ -61,7 +61,6 @@ nav{
 }
 
 .menu-horizontale li:hover .menu-verticale{
-    /* display: block; antes activo pero le puse ahora grid para columnas */
     display: grid; /* para hcaer columnas dentro del menu vertical*/
     flex-wrap: wrap; /* para que los item salten de linea cuando no entren en una */
     grid-template-columns: repeat(8,1fr); /*8 columnas con 1 fraccion de espacio entre ellas */
@@ -70,9 +69,9 @@ nav{
 }
 
 
-.menu-horizontale li:hover .menu-verticale{
+/* .menu-horizontale li:hover .menu-verticale{
     display: flex;
-}
+} */
 
 .menu-horizontale > li:hover > a { /* RECIEN AGREGADO */
     color: var(--subarucolorwhite);
