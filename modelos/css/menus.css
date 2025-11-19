@@ -69,9 +69,10 @@ nav{
 }
 
 
-/* .menu-horizontale li:hover .menu-verticale{
+.menu-horizontale li:hover .menu-verticale{
     display: flex;
-} */
+
+}
 
 .menu-horizontale > li:hover > a { /* RECIEN AGREGADO */
     color: var(--subarucolorwhite);
