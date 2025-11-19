@@ -16,6 +16,7 @@
     --subarucolorblack: #000000;
     --variablecoloricon: orangered;
     --variablecolorneongreen: #4efd00;
+    --variablecolorred: #ff0000;
 }
 
 #menubar-1{
@@ -44,11 +45,12 @@ nav{
     align-items: center;
     list-style: none;
     margin: 0 50px;
+
 }
 
 .menu-horizontale > li > a{
     display: block;
-    padding: 5px 5px; /* ESPACIO ENTRE CATEGORIAS */
+    padding: 5px 10px; /* ESPACIO ENTRE CATEGORIAS */
     color: var(--subarucolorblue);
     font-weight: 600;
     text-decoration: none;
@@ -59,48 +61,47 @@ nav{
 }
 
 .menu-horizontale li:hover .menu-verticale{
-    /* display: block; */ /* antes activo pero le puse ahora flex */
-    display: grid;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(8, 1fr); /* 8 columnas con 1 fraccion de espacio entre ellas */
-    gap: 10px; /* espacio entre columnas y filas */
+    /* display: block; antes activo pero le puse ahora grid para columnas */
+    display: grid; /* para hcaer columnas dentro del menu vertical*/
+    flex-wrap: wrap; /* para que los item salten de linea cuando no entren en una */
+    grid-template-columns: repeat(8,1fr); /*8 columnas con 1 fraccion de espacio entre ellas */
+    gap: 10px; /*espacio entre columnas y filas*/
 
+}
+
+
+.menu-horizontale li:hover .menu-verticale{
+    display: flex;
 }
 
 .menu-horizontale > li:hover > a { /* RECIEN AGREGADO */
     color: var(--subarucolorwhite);
 }
 
-
-/* .menu-horizontale > li >a:hover, .menu-verticale:focus{
-    color: var(--subarucolorwhite);
-} */
-
 /*/////////////////////////////////////////////////////////////////////////*/
 .menu-verticale{
     list-style: none;
     position: absolute;
     display: none;
-    width: 800px;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* width: auto; el ancho del menu vertical se ajusta automaticamente  */
+    background-color: rgba(70, 70, 70, 0.5);
     border: 2px solid var(--variablecolorneongreen) ;
-    
 }
 
 .menu-verticale li a{
     text-decoration: none;
     color: var(--subarucolorwhite);
-    padding: 15px 15px 15px 20px; /* ESPACIO ENTRE SUBCATEGORIAS */
+    margin: 15px 0px;
+
 }
 
 /*=======================================================================*/
 /*=========================== DENTRO DI MENU ============================*/
-.menu-verticale > li{
-    display: flex;
-    width: 120px;
-}
-
 .menu-verticale > li > a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -109,6 +110,12 @@ nav{
     width: 70px;
 }
 
-.menu-verticale > li > a > span{
-    display: flex;
+.menu-verticale > li > a > span.si-stock{
+    color: var(--variablecolorneongreen);
+    font-weight: 700;
+}
+
+.menu-verticale > li > a > span.no-stock{
+    color: var(--variablecolorred);
+    font-weight: 700;
 }
