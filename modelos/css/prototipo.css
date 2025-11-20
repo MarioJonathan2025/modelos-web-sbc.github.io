@@ -15,6 +15,14 @@
     --subarucolorwhite: #ffffff;
     --variablecoloricon: orangered;
     --variablecolorneongreen: #4efd00;
+
+    /* ================== MENU =======================*/
+    --subarucolorblue: #0e4bef;
+    --subarucolorwhite: #ffffff;
+    --subarucolorblack: #000000;
+    --variablecoloricon: orangered;
+    --variablecolorneongreen: #4efd00;
+    --variablecolorred: #ff0000;
 }
 
 /*#nastro-1{
@@ -473,4 +481,114 @@
 
         padding: 0;
     }
+}
+
+/*==================================================================================*/
+/*==================================================================================*/
+/*============================== BARRA MENU CATEGORIAS =============================*/
+/*==================================================================================*/
+/*==================================================================================*/
+#menubar-1{
+    background: #C33764;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+/*=======================================================================*/
+/*=======================================================================*/
+body{
+    background-color: #888888;
+}
+
+nav{
+    max-width: 1920px;
+
+    background-color: var(--subarucolorwhite);
+    font-size: 15px;
+    /* margin-top: 30px; */
+}
+
+.menu-horizontale{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0 50px;
+
+}
+
+.menu-horizontale > li > a{
+    display: block;
+    padding: 5px 10px; /* ESPACIO ENTRE CATEGORIAS */
+    color: var(--subarucolorblue);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu-horizontale > li:hover{
+    background-color: var(--subarucolorblack);
+}
+
+.menu-horizontale li:hover .menu-verticale{
+    display: grid; /* para hcaer columnas dentro del menu vertical*/
+    flex-wrap: wrap; /* para que los item salten de linea cuando no entren en una */
+    grid-template-columns: repeat(8,1fr); /*8 columnas con 1 fraccion de espacio entre ellas */
+    gap: 10px; /*espacio entre columnas y filas*/
+
+}
+
+
+.menu-horizontale li:hover .menu-verticale{
+    display: flex;
+
+
+}
+
+.menu-horizontale > li:hover > a { /* RECIEN AGREGADO */
+    color: var(--subarucolorwhite);
+}
+
+/*/////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////*/
+.menu-verticale{
+    list-style: none;
+    position: absolute;
+    display: none;
+    /* width: auto; el ancho del menu vertical se ajusta automaticamente  */
+    background-color: rgba(211, 211, 211, 0.5);
+    border: 2px solid var(--variablecolorneongreen) ;
+    padding: 20px 20px;
+}
+
+.menu-verticale li a{
+    text-decoration: none;
+    color: var(--subarucolorwhite);
+    margin: 15px 10px;
+
+
+}
+
+/*=======================================================================*/
+/*=========================== DENTRO DI MENU ============================*/
+.menu-verticale > li > a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu-verticale > li > a > img{
+    height: 70px;
+    width: 70px;
+}
+
+.menu-verticale > li > a > span.si-stock{
+    color: var(--variablecolorneongreen);
+    font-weight: 700;
+}
+
+.menu-verticale > li > a > span.no-stock{
+    color: var(--variablecolorred);
+    font-weight: 700;
 }
