@@ -72,6 +72,7 @@ nav{
 .menu-horizontale li:hover .menu-verticale{
     display: flex;
 
+
 }
 
 .menu-horizontale > li:hover > a { /* RECIEN AGREGADO */
