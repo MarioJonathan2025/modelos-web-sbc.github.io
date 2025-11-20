@@ -30,13 +30,14 @@ img{
 
 .slider{
     display: flex;
+    transition: transform 0.5s; /* 13- animacion de transitcion de imagen */
 }
 
 .slide{
     min-width: 100%; /* 1- usara el 100% como minimo del ancho del contenedor pero hay desbordamiento */
 }
 
-.button{
+.button{ /* botones para cambiar imagen manualmente */
     position: absolute;
     top: 50%;
     width: 100%;
@@ -54,4 +55,29 @@ button{
     font-size: 40px;
     padding: 0 15px;
     user-select: none; /* 6- para desactivar la raya quee parpadea para escribir texto */
+}
+
+.dot{
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 3px;
+    user-select: none;
+    /* 7- luego creamos el contenedor de los dots (.dots-container) */
+
+    transition: background 0.3s;
+}
+
+.dots-container{
+    position: absolute;
+    left: 50%;
+    bottom: 12px;
+    transform: translateX(-50%); /* para ubicarlo en la parte cental */
+    display: flex; /* 8- para que este uno al lado del otro en fila */
+}
+
+.dot.active{
+    background-color: #ffb426;
 }
