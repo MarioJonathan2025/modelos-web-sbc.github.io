@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Livvic';
+}
+
+body{
+    background-color: #ffb426;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*//////////////////////////////////////////////////////////////////////////*/
+.slider-container{ /* CONTAINER PRINCIPAL */
+    width: 90%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    overflow: hidden; /* 2- asi ocultamos el desbordamiento */
+    position: relative;
+}
+
+img{
+    width: 100%;
+    display: block; /* 3- se elimina la linea que habia debajo */
+}
+
+.slider{
+    display: flex;
+}
+
+.slide{
+    min-width: 100%; /* 1- usara el 100% como minimo del ancho del contenedor pero hay desbordamiento */
+}
+
+.button{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%); /* 5- se translada del 50% de su ancho */
+}
+
+button{
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-size: 40px;
+    padding: 0 15px;
+    user-select: none; /* 6- para desactivar la raya quee parpadea para escribir texto */
+}
