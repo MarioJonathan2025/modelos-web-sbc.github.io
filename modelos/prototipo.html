@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="css/prototipo.css">
     <link rel="stylesheet" href="icons/fontawesome/css/all.css">
     
+    <link rel="stylesheet" href="resources/splide-4.1.3/dist/css/splide.min.css">
+    <script src="resources/splide-4.1.3/dist/js/splide.min.js"></script>
+
 </head>
 <body>
     
-    <!-------------------------------- NASTRO ------------------------------------>
+    <!--=================================== NASTRO ============================================-->
     <section id="nastro-1">
         <div class="div-zero">
             <div class="div-zero-links">
@@ -40,13 +43,13 @@
         </div>
     </section>
 
-    <!-------------------------------- SEPARATORE ------------------------------------>
+    <!--=================================== SEPARATORE ============================================-->
 
     <section id="separator-2a">
         <div class="separator-2a-neon-plus"></div>
     </section>
 
-    <!----------------------- LOGO, MOTORE DI RICERCA E PULSANTI ------------------->
+    <!--========================== LOGO, MOTORE DI RICERCA E PULSANTI ============================-->
     <section id="header-1">
         
         <div class="div-0">
@@ -145,13 +148,13 @@
 
     </section>
 
-    <!-------------------------------- SEPARATORE ------------------------------------>
+    <!--=================================== SEPARATORE ============================================-->
 
     <section id="separator-2a">
         <div class="separator-2a-neon-plus"></div>
     </section>
 
-    <!----------------------- PRIMO MENU ------------------------->
+    <!--=================================== PRIMO MENU ============================================-->
     <section id="menubar-1">
         <nav id="nav-section">
             <ul class="menu-horizontale">
@@ -353,6 +356,8 @@
                     </ul>
                 </li>
 
+                <!----------------------- CATEGORIA 4 --------------------------->
+
                 <li>
                     <a href="">Monitores</a>
                     <ul class="menu-verticale">
@@ -395,6 +400,7 @@
                     </ul>
                 </li>
 
+                <!----------------------- CATEGORIA 5 --------------------------->
                 <li>
                     <a href="">Energia</a>
                     <ul class="menu-verticale">
@@ -419,6 +425,7 @@
                     </ul>
                 </li>
 
+                <!----------------------- CATEGORIA 6 --------------------------->
                 <li>
                     <a href="">Accesorios Gamer</a>
                     <ul class="menu-verticale">
@@ -443,6 +450,7 @@
                     </ul>
                 </li>
 
+                <!----------------------- CATEGORIA 7 --------------------------->
                 <li>
                     <a href="">Camaras</a>
                     <ul class="menu-verticale">
@@ -467,6 +475,7 @@
                     </ul>
                 </li>
 
+                <!----------------------- CATEGORIA 7 --------------------------->
                 <li>
                     <a href="">Redes</a>
                     <ul class="menu-verticale">
@@ -503,6 +512,7 @@
                     </ul>
                 </li>
 
+                <!----------------------- CATEGORIA 8 --------------------------->
                 <li>
                     <a href="">All in One</a>
                     <ul class="menu-verticale">
@@ -527,6 +537,7 @@
                     </ul>
                 </li>
 
+                <!----------------------- CATEGORIA 9 --------------------------->
                 <li>
                     <a href="">Impresoras / Escaneres</a>
                     <ul class="menu-verticale">
@@ -551,6 +562,7 @@
                     </ul>
                 </li>
 
+                <!----------------------- CATEGORIA 10 --------------------------->
                 <li>
                     <a href="">Tablets</a>
                     <ul class="menu-verticale">
@@ -568,11 +580,32 @@
                         </li>
                     </ul>
                 </li>
+
                 <!-- <li><a href="">Accesorios Tecnologicos</a></li> -->
+
+                <!----------------------- CATEGORIA 11 --------------------------->
                 <li><a href="">Mas...</a></li>
 
             </ul>
         </nav>
     </section>
+
+    <!--=================================== CAROUSEL ============================================-->
+
+    <section class="splide" aria-label="Ejemplo de estructura básica">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide"><img src="img/banners/banner1.jpg" alt=""></li>
+                <li class="splide__slide"><img src="img/banners/banner2.jpg" alt=""></li>
+                <li class="splide__slide"><img src="img/banners/banner3.jpg" alt=""></li>
+            </ul>
+        </div>
+    </sección>
+
+    <script>
+        var splide = new Splide( '.splide',{type: 'loop', autoplay: true, interval: '5000'} ); /* {type: 'loop'} para que comience desde la primera al llegar al ultimo*/
+        splide.mount();
+    </script>
+
 </body>
 </html>
