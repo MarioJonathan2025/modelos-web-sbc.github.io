@@ -8,26 +8,34 @@
     <link rel="stylesheet" href="css/carrousel.css">
 </head>
 <body>
-    
-    <div class="slider-container">
-        <div class="slider">
-            <!-- Las imagenes las envolvemos con div porque le daremos estilos
-            sin modificar tanto la imagen, segun el tutorial -->
-            <div class="slide"><img src="img/carrousel/esempio/img-1.jpg" alt=""></div>
-            <div class="slide"><img src="img/carrousel/esempio/img-2.jpg" alt=""></div>
-            <div class="slide"><img src="img/carrousel/esempio/img-3.jpg" alt=""></div>
-            <div class="slide"><img src="img/carrousel/esempio/img-4.jpg" alt=""></div>
-            <div class="slide"><img src="img/carrousel/esempio/img-5.jpg" alt=""></div>
+
+    <!---------------------------------------------------- SLIDER 1 ----------------------------------------------------->
+    <section id="slider-1">
+
+        <div class="slider-container">
+            <div class="slider">
+                <!-- Las imagenes las envolvemos con div porque le daremos estilos
+                sin modificar tanto la imagen, segun el tutorial -->
+                <div class="slide"><img src="img/carrousel/esempio/img-1.jpg" alt=""></div>
+                <div class="slide"><img src="img/carrousel/esempio/img-2.jpg" alt=""></div>
+                <div class="slide"><img src="img/carrousel/esempio/img-3.jpg" alt=""></div>
+                <div class="slide"><img src="img/carrousel/esempio/img-4.jpg" alt=""></div>
+                <div class="slide"><img src="img/carrousel/esempio/img-5.jpg" alt=""></div>
+            </div>
+
+            <div class="button">
+                <button onclick="prevSlide()">&#10094</button><!-- 4- con este codigo se crean la sflechas angulares -->
+                <button onclick="nextSlide()">&#10095</button> <!-- 12- el boton derecho e izquierda funcionan -->
+            </div>
+
+            <div class="dots-container"></div>
+
         </div>
 
-        <div class="button">
-            <button onclick="prevSlide()">&#10094</button><!-- 4- con este codigo se crean la sflechas angulares -->
-            <button onclick="nextSlide()">&#10095</button> <!-- 12- el boton derecho e izquierda funcionan -->
-        </div>
+    </section>
 
-        <div class="dots-container"></div>
+    <!---------------------------------------------------- SLIDER 2 ----------------------------------------------------->
 
-    </div>
 
     <script src="js/carrousel.js"></script>
 </body>

@@ -30,10 +30,33 @@ function updateSlider() {
     updateDots();
 }
 
-function nextSlide() { /* funcion para que me adelante o lleve a la sgte imagen */ 
-    currentIndex = (currentIndex + 1) % slide.length; /* sumar el indice actual a+1 y lo dividimos entre el numero de imagenes */
-    updateSlider();
-} 
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+// function nextSlide() { /* funcion para que me adelante o lleve a la sgte imagen */ 
+//     currentIndex = (currentIndex + 1) % slide.length; /* sumar el indice actual a+1 y lo dividimos entre el numero de imagenes */
+//     updateSlider();
+// } 
+
+function nextSlide() {
+    if (currentIndex === slide.length - 1) {
+        // Avanza a "copia" extra con transición
+        currentIndex++;
+        updateSlider();
+        slider.addEventListener('transitionend', () => {
+            // Resetea sin transición
+            slider.style.transition = 'none';
+            currentIndex = 0;
+            updateSlider();
+            // Forzar el reflow para que la eliminación de la transición tenga efecto
+            void slider.offsetWidth;
+            // Reactiva la transición
+            slider.style.transition = '';
+        }, { once: true });
+    } else {
+        currentIndex++;
+        updateSlider();
+    }
+}
+
 
 function prevSlide() { /* funcion para que me adelante o lleve a la sgte imagen */ 
     currentIndex = (currentIndex - 1 + slide.length) % slide.length; /* sumar el indice actual a+1 y lo dividimos entre el numero de imagenes */
@@ -69,11 +92,11 @@ function autoSlide() {
 }
 
 /* 19- para resetear el intervalo cuando se cambia de imagen manualmente antes de los X segundos (solo con los puntos*/
-interval = setInterval(autoSlide, 3000);
+interval = setInterval(autoSlide, 5000);
 
 function resetInteval() {
     clearInterval(interval);
-    interval = setInterval(autoSlide, 3000);
+    interval = setInterval(autoSlide, 5000);
 }
 
 /* 20- para resetear el intervalo cuando se cambia de imagen manualmente antes de los X segundos (solo con los botones laterales*/
