@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .splide__container {
     box-sizing:border-box;
     position:relative
@@ -197,7 +196,7 @@
 .splide__pagination__page.is-active {
     background:#4efd00;
     transform:scale(1.4);
-    z-index:1
+    z-index:1;
 }
 .splide__pagination__page:hover {
     cursor:pointer;
@@ -306,7 +305,7 @@
     right:.5em;
     top:0
 }
-=======
+
 @keyframes splide-loading {
     0% {
         transform: rotate(0);
@@ -434,4 +433,4 @@
     position: relative;
     z-index: 0;
 }
->>>>>>> 55d6c1d13237ae12001f1d5de6ffddfe3e7c7fba
+

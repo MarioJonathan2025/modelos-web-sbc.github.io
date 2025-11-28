@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="css/slidericon.css">
 
-    <link rel="stylesheet" href="resources/splide-4.1.3/dist/css/splide.min.css">
+    <link rel="stylesheet" href="resources/splide-4.1.3/dist/css/splide.css"> 
     <script src="resources/splide-4.1.3/dist/js/splide.min.js"></script>
 
 </head>
@@ -25,12 +25,12 @@
         <div class="splide__track">
             <ul class="splide__list">
                 <li class="splide__slide">
-                    <a href=""><img src="img/slider/slidericon-1/almacenamiento.png" alt="">
+                    <a href=""><div class="background"><img src="img/slider/slidericon-1/almacenamiento.png" alt=""></div>
                     <p>Almacenamiento</p></a>
                 </li>
                 <li class="splide__slide">
                     <a href=""><img src="img/slider/slidericon-1/acc-tecnologicos.png" alt="">
-                    <p>Accesorios tecnologicos</p></a>
+                    <p>Dispositivos tecnologicos</p></a>
                 </li>
                 <li class="splide__slide">
                     <a href=""><img src="img/slider/slidericon-1/acc-laptops.png" alt="">
@@ -44,6 +44,10 @@
                     <a href=""><img src="img/slider/slidericon-1/software.png" alt="">
                     <p>Software</p></a>
                 </li>
+                <li class="splide__slide">
+                    <a href=""><img src="img/slider/slidericon-1/" alt="">
+                    <p>Limpieza</p></a>
+                </li>
             </ul>
 
         </div>
@@ -53,7 +57,7 @@
         var splide = new Splide( '.splide', {
         type   : 'loop',
         drag   : 'free',
-        perPage: 5,
+        perPage: 6,
         } );
 
         splide.mount();

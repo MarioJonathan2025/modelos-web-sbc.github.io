@@ -12,7 +12,7 @@
 
 :root {
     --fondocolor: #ccc;
-
+    --iconofondocolor: orangered;
 }
 
 .splide {
@@ -31,13 +31,19 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
+
+}
+
+.splide__slide .background {
+    background-color: var(--iconofondocolor);
+    border-radius: 50%;
+
+
 }
 
 .splide__slide a img {
     height: 150px;
+    position: relative;
 }
 
 /****************************************************/
-.splide__pagination__page {
-
-}
