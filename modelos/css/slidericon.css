@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Livvic';
+    src: url(../fonts/Livvic/Livvic-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Livvic';
+}
+
+:root {
+    --fondocolor: #ccc;
+
+}
+
+.splide {
+    background-color: var(--fondocolor);
+    margin: 30px 0;
+    padding: 30px 0;
+}
+
+.splide h2{
+    text-align: center;
+}
+
+.splide__slide > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.splide__slide a img {
+    height: 150px;
+}
+
+/****************************************************/
+.splide__pagination__page {
+
+}
