@@ -17,28 +17,34 @@
         <h2 id="carousel-heading">Basic Structure Example</h2>
 
         <div class="splide__track">
-              <ul class="splide__list">
-                  <li class="splide__slide"><img src="img/slider/slidericon-1/almacenamiento.png" alt="">Slide 01</li>
-                  <li class="splide__slide"><img src="img/slider/slidericon-1/acc-tecnologicos.png" alt="">Slide 02</li>
-                  <li class="splide__slide"><img src="img/slider/slidericon-1/acc-laptops.png" alt="">Slide 03</li>
-                  <li class="splide__slide"><img src="img/slider/slidericon-1/acc-general.png" alt="">Slide 03</li>
-                  <li class="splide__slide"><img src="img/slider/slidericon-1/software.png" alt="">Slide 03</li>
-              </ul>
-              
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <a href=""><img src="img/slider/slidericon-1/almacenamiento.png" alt="">Slide 01</a>
+                </li>
+                <li class="splide__slide">
+                    <a href=""><img src="img/slider/slidericon-1/acc-tecnologicos.png" alt="">Slide 02</a>
+                </li>
+                <li class="splide__slide">
+                    <a href=""><img src="img/slider/slidericon-1/acc-laptops.png" alt="">Slide 03</a>
+                </li>
+                <li class="splide__slide">
+                    <a href=""><img src="img/slider/slidericon-1/acc-general.png" alt="">Slide 04</a>
+                </li>
+                <li class="splide__slide">
+                    <a href=""><img src="img/slider/slidericon-1/software.png" alt="">Slide 05</a>
+                </li>
+            </ul>
         </div>
-      </section>
+    </section>
 
-      <script>
+    <script>
+        var splide = new Splide( '.splide', {
+        type   : 'loop',
+        drag   : 'free',
+        perPage: 6,
+        } );
 
-
-
-var splide = new Splide( '.splide', {
-  type   : 'loop',
-  drag   : 'free',
-  perPage: 6,
-} );
-
-splide.mount();
-      </script>
+        splide.mount();
+    </script>
 </body>
 </html>
