@@ -13,6 +13,10 @@
 :root {
     --fondocolor: #ccc;
     --iconofondocolor: orangered;
+    --subarucolorblue: #0e4bef;
+
+    /* ANIMATE.CSS */
+    --animation-name: shakeX;
 }
 
 .splide {
@@ -47,7 +51,7 @@
     transform: translate(-50%, -50%); /* Ajuste perfecto del centro */
     width: 150px; /* Ajusta al tamaño deseado de tu imagen */
     height: 150px;
-    background-color: #F9FFAD; /* Color del círculo */
+    background-color: var(--iconofondocolor); /* Color del círculo */
     border-radius: 50%; /* Hace el círculo perfecto */
     z-index: 1; /* Detrás de la imagen */
 }
@@ -57,10 +61,23 @@
     position: relative;
     z-index: 2; /* Imagen encima del círculo */
     /* border-radius: 50%; Opcional: redondea la imagen también */
+    
+}
+
+.splide__slide img:hover {
+    /* animation: shakeX 1.2s ease-in; */ /* Lo mismo de las 4 lineas de abajo pero en uno solo */
+    animation-name: var(--animation-name);
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-delay: 1;
+
 }
 
 .splide__slide p {
     margin-top: 30px;
     text-align: center;
+    color: var(--subarucolorblue);
+    font-weight: 800;
 }
 
