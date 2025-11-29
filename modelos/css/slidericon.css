@@ -49,8 +49,8 @@
     top: 50%; /* Centra verticalmente */
     left: 50%; /* Centra horizontalmente */
     transform: translate(-50%, -50%); /* Ajuste perfecto del centro */
-    width: 100px; /* Ajusta al tamaño deseado de tu imagen */
-    height: 100px;
+    width: 120px; /* Ajusta al tamaño deseado de tu imagen */
+    height: 120px;
     background-color: var(--iconofondocolor); /* Color del círculo */
     border-radius: 50%; /* Hace el círculo perfecto */
     z-index: 1; /* Detrás de la imagen */
@@ -75,7 +75,7 @@
 }
 
 .splide__slide p {
-    margin-top: 30px;
+    margin-top: 10px;
     text-align: center;
     color: var(--subarucolorblue);
     font-weight: 800;
