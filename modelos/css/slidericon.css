@@ -17,12 +17,13 @@
 
 .splide {
     background-color: var(--fondocolor);
-    margin: 30px 0;
-    padding: 30px 0;
+    margin: 30px 0px;
+    padding: 30px 30px;
 }
 
 .splide h2{
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .splide__slide a {
