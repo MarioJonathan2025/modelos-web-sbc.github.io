@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Slider icons</title>
 
     <link rel="stylesheet" href="css/slidericon.css">
@@ -15,7 +14,7 @@
 
 <body>
     
-    <section class="splide" id="banner-splide" aria-labelledby="carousel-heading">
+    <section class="splide" aria-labelledby="carousel-heading">
         <h2 id="carousel-heading">Más categorias</h2>
 
         <div class="splide__track">
@@ -50,13 +49,13 @@
     </section>
 
     <script>
-        var bannerSplide = new Splide( '#banner-splide', {
+        var splide = new Splide( '.splide', {
         type   : 'loop',
         drag   : 'free',
         perPage: 6.01,
         } );
 
-        bannerSplide.mount();
+        splide.mount();
     </script>
 
 </body>

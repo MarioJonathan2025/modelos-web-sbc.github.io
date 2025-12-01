@@ -592,9 +592,9 @@
         </nav>
     </section>
 
-    <!--=================================== CAROUSEL ============================================-->
+    <!--=================================== CAROUSEL - SLIDER 1 ============================================-->
 
-    <section class="splide" id="carrousel-splide" aria-label="Ejemplo de estructura básica">
+    <!-- <section class="splide" aria-label="Ejemplo de estructura básica">
         <div class="splide__track">
             <ul class="splide__list">
                 <li class="splide__slide"><img src="img/banners/banner1.jpg" alt=""></li>
@@ -605,11 +605,58 @@
     </sección>
 
     <script>
-        var carrouselSplide = new Splide( '#carrousel-splide', {
+        var carouselSplide = new Splide( '.splide', {
             type: 'loop', 
             autoplay: true, 
-            interval: '5000'} ); /* {type: 'loop'} para que comience desde la primera al llegar al ultimo*/
-        carrouselSplide.mount();
+            interval: '5000'
+        } ); /* {type: 'loop'} para que comience desde la primera al llegar al ultimo*/
+
+        carouselSplide.mount();
+    </script> -->
+
+    <!--=================================== SLIDER 2 ============================================-->
+    <section class="splide slider-2" aria-labelledby="carousel-heading">
+        <h2 id="carousel-heading">Más categorias</h2>
+
+        <div class="splide__track splide-2__track">
+            <ul class="splide__list splide-2__list">
+                <li class="splide__slide splide-2__slide">
+                    <a href="" class="circulo"><img src="img/slider/slidericon-1/almacenamiento.png" alt="">
+                    </a><p>Almacenamiento</p>
+                </li>
+                <li class="splide__slide splide-2__slide">
+                    <a href="" class="circulo"><img src="img/slider/slidericon-1/acc-tecnologicos.png" alt="">
+                    </a><p>Dispositivos tecnologicos</p>
+                </li>
+                <li class="splide__slide splide-2__slide">
+                    <a href="" class="circulo"><img src="img/slider/slidericon-1/acc-laptops.png" alt="">
+                    </a><p>Accesorios para laptops</p>
+                </li>
+                <li class="splide__slide splide-2__slide">
+                    <a href="" class="circulo"><img src="img/slider/slidericon-1/acc-general.png" alt="">
+                    </a><p>Accesorios en general</p>
+                </li>
+                <li class="splide__slide splide-2__slide">
+                    <a href="" class="circulo"><img src="img/slider/slidericon-1/software.png" alt="">
+                    </a><p>Software</p>
+                </li>
+                <li class="splide__slide splide-2__slide">
+                    <a href="" class="circulo"><img src="img/slider/slidericon-1/limpieza-mantenimiento.png" alt="">
+                    </a><p>Limpieza y Mantenimiento</p>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <script>
+        var splide = new Splide( '.slider-2', {
+        type   : 'loop',
+        drag   : 'free',
+        perPage: 6.01,
+        } );
+
+        splide.mount();
     </script>
 
 </body>
