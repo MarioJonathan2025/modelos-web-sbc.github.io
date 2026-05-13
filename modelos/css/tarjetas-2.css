@@ -13,11 +13,9 @@ body{
     flex-wrap: wrap;
     background-color: #efecec;
     margin: auto;
-    display: flex;
-    justify-content: center;
 
     width: 100%;
-    max-width: 15 00px;
+    max-width: 15px 0px;
     height: auto;
     overflow: hidden;
     position: relative;
@@ -26,9 +24,9 @@ body{
 .carta{
     position: relative;
     background: white;
-    width: 350px;
+    width: 300px;
     margin: auto;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
     transform: scale(0.8);
@@ -36,7 +34,8 @@ body{
 
 .img{ /*POSITION, EN RELACION A .BOTONES*/
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 
 .botones{ /*POSITION, EN RELACION A .IMG*/
@@ -79,21 +78,30 @@ body{
 .codice{ 
     padding: 20px 0 0 0;
     color: red;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .stock{
     padding: 8px 0;
     color: rgb(0, 173, 0);
+    font-size: 20px;
     font-weight: bold;
 }
 
 .descrizione a{
     text-decoration: none;
     color: black;
-    padding: 5px 0;
+
     font-weight: bold;
     font-size: 18px;
+
+    /*las 5 lineas siguiente son para que el parrafo aparesca solo con 3 lineas seguido de puntos suspendidos*/
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .descrizione a:hover{
@@ -102,6 +110,7 @@ body{
 }
 
 .prezzo{
+    display: flex; /* para centrarlo dentro del div prezzo */
     padding: 20px 0;
     font-size: 30px;
     font-weight: bold;
@@ -110,21 +119,36 @@ body{
 
 .pulsanti{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.pulsanti i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
 }
 
 .pulsanti a{
-    background: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: red;
     text-align: center;
     width: 100%;
-    border-radius: 20px;
-    padding: 8px 0;
+    border-radius: 15px;
+    padding: 20px 0;
     text-decoration: none;
     color: white;
-    font-size: 12px;
+    font-size: 20px;
     font-weight: 700;
 }
 
 .pulsanti .space{
-    margin: 0 1px;
+    margin: 0 5px;
+}
+
+.pulsanti .comprare{
+    background-color: black;
 }
