@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Livvic";
+}
+
+body{
+    background: beige;
+}
+
+.div-0{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #efecec;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 15 00px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carta{
+    position: relative;
+    background: white;
+    width: 350px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+    transform: scale(0.8);
+}
+
+.img{ /*POSITION, EN RELACION A .BOTONES*/
+    position: relative;
+    display: block;
+}
+
+.botones{ /*POSITION, EN RELACION A .IMG*/
+    position: absolute;
+    z-index: 2;
+    margin: auto;
+    opacity: 0;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: opacity 0.1s ease;
+    display: flex;
+    gap: 10px;
+
+}
+
+.botones button{
+    background: red;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    border: 0px ;
+    cursor: pointer;
+    text-align: center;
+}
+
+.botones:hover, .img:hover .botones{
+    opacity: 1;
+
+}
+
+.sku p{
+    display: none;
+    padding: 0px 0 20px 0;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+
+.codice{ 
+    padding: 20px 0 0 0;
+    color: red;
+    font-weight: bold;
+}
+
+.stock{
+    padding: 8px 0;
+    color: rgb(0, 173, 0);
+    font-weight: bold;
+}
+
+.descrizione a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.descrizione a:hover{
+    cursor: pointer;
+    color: rgb(100, 175, 249);
+}
+
+.prezzo{
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+
+.pulsanti{
+    display: flex;
+    justify-content: space-around;
+}
+
+.pulsanti a{
+    background: orangered;
+    text-align: center;
+    width: 100%;
+    border-radius: 20px;
+    padding: 8px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.pulsanti .space{
+    margin: 0 1px;
+}
