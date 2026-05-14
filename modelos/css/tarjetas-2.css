@@ -31,16 +31,31 @@ body{
     border: 1px solid rgba(175, 175, 175, 0.5);
     /*box-shadow: 3px 3px 8px rgba(0,0,0,0.3);*/
     transform: scale(0.8);
+    overflow: hidden; 
+}
+
+.carta img{ /* PRIMERO en carta img para que haga la transicion */
+    transition: transform 0.5s ease-out;
+    overflow: hidden; 
 }
 
 .carta:hover{
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 
+.carta:hover img{ /* SEGUNDO en carta:hover img para que haga la transition*/
+    transition: transform 0.5s ease-in;
+    transform: scale(1.05);
+    overflow: hidden; 
+
+}
+
 .img{ /*POSITION, EN RELACION A .BOTONES*/
     position: relative;
     display: flex;
     justify-content: center;
+
+
 }
 
 .botones{ /*POSITION, EN RELACION A .IMG*/
