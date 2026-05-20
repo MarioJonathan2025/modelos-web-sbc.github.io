@@ -191,16 +191,38 @@ body{
     margin: auto;
     width: 90%;
     max-width: 1200px;/* el ancho será (del 90%) siempre y cuando sea menor a 1200px */
-    max-height: 80%;
+    height: 80%;
     background-color: white;
     border-radius: 40px;
     padding: 3em 2.5em;
-    display: grid;
+    display: flex;
     gap: 1em;/* espacio para el grid */
     place-items: center;
     grid-auto-columns: 100%;/* las columnas automaticamente miden el 100% */
 }
 
 .modale_div-1a-img{
+    background-color: #f6f6f6;
+    padding: 80px 20px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+}
+
+.modale_image{
     width: 90%;
+    max-width: 500px;
+}
+
+.modale_div-1a-subimg{
+    display: flex;
+    background-color: #f6f6f6;
+    padding: 10px 5px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.modale_subimage{
+    width: 10%;
+    padding-right: 20px;
+
 }
